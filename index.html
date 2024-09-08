@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innerbank - Premium Banking Experience</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Innerbank</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#account-management">Account Management</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <h1>Welcome to <span>Innerbank</span></h1>
+      <p>Your trusted partner in financial empowerment. Experience premium banking tailored for you.</p>
+      <a href="#contact-us" class="btn">Open Your Account</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h2>Our Services</h2>
+      <p>Explore a wide range of banking services designed to meet all your financial needs.</p>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Savings Account</h3>
+          <p>Secure your future with our high-interest savings accounts, designed for easy access and maximum growth.
+          </p>
+        </div>
+        <div class="service-item">
+          <h3>Current Account</h3>
+          <p>Manage your business finances with ease using our flexible current accounts with personalized service.</p>
+        </div>
+        <div class="service-item">
+          <h3>Fixed Deposits</h3>
+          <p>Invest with confidence with our fixed deposit plans offering competitive rates and guaranteed returns.</p>
+        </div>
+        <div class="service-item">
+          <h3>Loans and Credit</h3>
+          <p>Get the financial support you need with our range of loan options, including personal, home, and auto
+            loans.</p>
+        </div>
+        <div class="service-item">
+          <h3>Internet Banking</h3>
+          <p>Bank from anywhere, anytime with our secure and easy-to-use internet banking platform.</p>
+        </div>
+        <div class="service-item">
+          <h3>Mobile Banking</h3>
+          <p>Experience the power of banking on the go with our feature-rich mobile app, available on all devices.</p>
+        </div>
+        <div class="service-item">
+          <h3>Insurance Services</h3>
+          <p>Protect what matters most with our comprehensive insurance solutions tailored to your needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Investment Services</h3>
+          <p>Grow your wealth with expert advice and a range of investment options including mutual funds and stocks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+      <h2>About Us</h2>
+      <p>At <strong>Innerbank</strong>, we believe that banking should be simple, secure, and empowering. Founded with
+        the vision to redefine how people interact with their finances, we are more than just a bank—we are your
+        financial partner, guiding you toward your dreams with innovative solutions tailored just for you.</p>
+      <h3>Our Vision</h3>
+      <p>Our vision is to build a future where banking is not just about numbers, but about enhancing lives. We strive
+        to break the boundaries of traditional banking, leveraging technology to create a seamless and personalized
+        experience for every customer.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="contact-us-section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or wish to open an account with us, please fill out the form below. Our team will get
+        back to you promptly!</p>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your query or details" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <!-- Account Management Section -->
+    <section id="account-management" class="account-management-section">
+      <h2>Account Management</h2>
+      <p>Manage your account balance with ease. Deposit or withdraw funds using the form below:</p>
+      <div class="balance-info">
+        <h3>Current Balance: <span id="balance">$100000.00</span></h3>
+      </div>
+      <form id="transaction-form">
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+        </div>
+        <div class="btn-container">
+          <button type="button" id="deposit-btn" class="btn">Deposit</button>
+          <button type="button" id="withdraw-btn" class="btn">Withdraw</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
